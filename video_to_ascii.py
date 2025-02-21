@@ -33,5 +33,5 @@ def video_to_ascii(path):
 
 if __name__ == "__main__":
     path = input("Paste the path to your video: ")
-    path = "Meta_PARTNR.webm" if path.strip() == '' else path
+    path = "media/examples/Meta_PARTNR.webm" if path.strip() == '' else path
     video_to_ascii(path)

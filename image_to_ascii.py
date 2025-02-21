@@ -25,11 +25,9 @@ def image_to_ascii(path):
 
         print(ascii_image)
 
-        with open(f"$HOME/Pictures/ASCII/{path.split('/')[-1].split('.')[0]}.txt", "w") as f:
-            f.write(ascii_image)
 
 if __name__ == "__main__":
     path = input("Paste the Path for an Image: ")
-    path = "black_hole.jpg" if path.strip() == '' else path
+    path = "media/examples/black_hole.jpg" if path.strip() == '' else path
     image_to_ascii(path)
 
